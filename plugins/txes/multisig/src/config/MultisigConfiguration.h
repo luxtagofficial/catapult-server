@@ -35,7 +35,7 @@ namespace catapult { namespace config {
 		uint8_t MaxCosignersPerAccount;
 
 		/// Maximum number of accounts a single account can cosign.
-		uint8_t MaxCosignedAccountsPerAccount;
+		uint16_t MaxCosignedAccountsPerAccount;
 
 	private:
 		MultisigConfiguration() = default;

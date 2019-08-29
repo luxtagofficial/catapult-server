@@ -44,7 +44,7 @@ namespace catapult { namespace validators {
 	/// - the cosignatory is cosigning at most \a maxCosignedAccountsPerAccount
 	DECLARE_STATEFUL_VALIDATOR(
 			ModifyMultisigMaxCosignedAccounts,
-			model::ModifyMultisigNewCosignerNotification)(uint8_t maxCosignedAccountsPerAccount);
+			model::ModifyMultisigNewCosignerNotification)(uint16_t maxCosignedAccountsPerAccount);
 
 	/// Validator that applies to modify multisig cosigners notifications and validates that:
 	/// - the multisig account has at most \a maxCosignersPerAccount cosignatories
