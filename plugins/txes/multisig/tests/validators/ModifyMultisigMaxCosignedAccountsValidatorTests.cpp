@@ -33,7 +33,7 @@ namespace catapult { namespace validators {
 		void AssertValidationResult(
 				ValidationResult expectedResult,
 				uint8_t initialCosignedAccounts,
-				uint8_t maxCosignedAccountsPerAccount) {
+				uint16_t maxCosignedAccountsPerAccount) {
 			// Arrange:
 			auto multisigAccountKey = test::GenerateRandomData<Key_Size>();
 			auto cosignatoryKey = test::GenerateRandomData<Key_Size>();
